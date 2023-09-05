@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Github clone">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://kit.fontawesome.com/54fac98cd7.js" crossorigin="anonymous"></script>
     <title>Github Profile</title>
@@ -26,7 +27,7 @@
 
                     <div class="github-app-header-item-end">
                         <div style="position: relative;">
-                            <label class="search-icon">
+                            <label class="search-icon" for="search-input" aria-label="search">
                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                                     data-view-component="true" class="octicon octicon-search">
                                     <path
@@ -35,9 +36,9 @@
                                 </svg>
                             </label>
 
-                            <input type="text" placeholder="Type / to search" class="search-input" />
+                            <input type="text" placeholder="Type / to search" class="search-input" id="search-input" />
 
-                            <button class="command-palette-btn">
+                            <button class="command-palette-btn" title="command-palette">
                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                                     data-view-component="true" class="octicon octicon-command-palette">
                                     <path
@@ -48,7 +49,7 @@
                         </div>
 
                         <div class="github-header-actions">
-                            <button class="btn" style="padding: 5px; display: flex;">
+                            <button class="btn" style="padding: 5px; display: flex;" title="add">
                                 <span>
                                     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                                         data-view-component="true" class="octicon octicon-plus">
@@ -67,7 +68,7 @@
                                 </span>
                             </button>
 
-                            <button class="btn" style="padding: 5px;">
+                            <button class="btn" style="padding: 5px;" title="issue open btn">
                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                                     data-view-component="true" class="octicon octicon-issue-opened Button-visual">
                                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
@@ -77,7 +78,7 @@
                                 </svg>
                             </button>
 
-                            <button class="btn">
+                            <button class="btn" title="git pull request">
                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                                     data-view-component="true" class="octicon octicon-git-pull-request Button-visual">
                                     <path
@@ -86,7 +87,7 @@
                                 </svg>
                             </button>
 
-                            <button class="btn">
+                            <button class="btn" title="inbox">
                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                                     data-view-component="true" class="octicon octicon-inbox color-fg-muted mr-0">
                                     <path
@@ -100,7 +101,7 @@
 
                         <div class="github-header-user">
                             <img class="circle" src="https://avatars.githubusercontent.com/u/115525034?v=4" size="32"
-                                width="32" height="32" />
+                                width="32" height="32" alt="github-header-user" />
                         </div>
 
                     </div>
@@ -232,7 +233,7 @@
                                             d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z">
                                         </path>
                                     </svg>
-                                    <span title="Toulouse">Toulouse</span>
+                                    <span>Toulouse</span>
                                 </li>
                                 <li class="pt-1">
                                     <svg class="octicon octicon-mail" viewBox="0 0 16 16" version="1.1" width="16"
@@ -304,36 +305,29 @@
 
                         <div class="acheivements">
                             <h2>Acheivements</h2>
-                            <a href="/scraly?achievement=pair-extraordinaire&amp;tab=achievements"
-                                class="position-relative">
+                            <a href="/scraly?achievement=pair-extraordinaire&amp;tab=achievements">
                                 <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png"
-                                    width="64" alt="Achievement: Pair Extraordinaire" class="achievement-badge-sidebar">
+                                    width="64" alt="Achievement: Pair Extraordinaire">
                             </a>
-                            <a href="https://github.com/scraly?achievement=quickdraw&tab=achievements"
-                                class="position-relative">
+                            <a href="https://github.com/scraly?achievement=quickdraw&tab=achievements">
                                 <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png"
-                                    width="64" alt="Achievement: Pair Extraordinaire" class="achievement-badge-sidebar">
+                                    width="64" alt="Achievement: QuickDraw">
                             </a>
-                            <a href="https://github.com/scraly?achievement=starstruck&tab=achievements"
-                                class="position-relative">
+                            <a href="https://github.com/scraly?achievement=starstruck&tab=achievements">
                                 <img src="https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png"
-                                    width="64" alt="Achievement: Pair Extraordinaire" class="achievement-badge-sidebar">
+                                    width="64" alt="Achievement: StarStruck">
                             </a>
-                            <a href="https://github.com/scraly?achievement=yolo&tab=achievements"
-                                class="position-relative">
+                            <a href="https://github.com/scraly?achievement=yolo&tab=achievements">
                                 <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png"
-                                    width="64" alt="Achievement: Pair Extraordinaire" class="achievement-badge-sidebar">
+                                    width="64" alt="Achievement: Yolo Default">
                             </a>
-                            <a href="https://github.com/scraly?achievement=pull-shark&tab=achievements"
-                                class="position-relative">
+                            <a href="https://github.com/scraly?achievement=pull-shark&tab=achievements">
                                 <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png"
-                                    width="64" alt="Achievement: Pair Extraordinaire" class="achievement-badge-sidebar">
+                                    width="64" alt="Achievement: Pull Shark">
                             </a>
-                            <a href="/scraly?achievement=arctic-code-vault-contributor&amp;tab=achievements"
-                                class="position-relative"><img
+                            <a href="/scraly?achievement=arctic-code-vault-contributor&amp;tab=achievements"><img
                                     src="https://github.githubassets.com/images/modules/profile/achievements/arctic-code-vault-contributor-default.png"
-                                    width="64" alt="Achievement: Arctic Code Vault Contributor"
-                                    class="achievement-badge-sidebar"></a>
+                                    width="64" alt="Achievement: Arctic Code Vault Contributor"></a>
                         </div>
 
                     </div>
@@ -343,7 +337,8 @@
                         <div class="main-actions">
                             <form class="layout-main-form-actions">
                                 <div class="search-repositories">
-                                    <input placeholder="Find a repository…" class="form-control" type="search" />
+                                    <input placeholder="Find a repository…" class="form-control" type="search"
+                                        aria-label="search-repositories" />
                                 </div>
                                 <div class="options">
                                     <details class="type">
@@ -517,7 +512,7 @@
                                                 </path>
                                             </svg>
                                             <span>
-                                                Star 
+                                                Star
                                             </span>
                                         </button>
                                     </div>
@@ -934,7 +929,7 @@
                         <i class="fa-brands fa-github fa-2x" style="color: #6e7781;"></i>
                     </div>
 
-                    <span style="margin-left: 0.5rem; color: #a2acbe;">
+                    <span style="margin-left: 0.5rem; color: #6e7781;">
                         © 2023 GitHub, Inc.
                     </span>
                 </div>
