@@ -6,7 +6,7 @@
     border-top: 1px solid var(--color-border-default);
     margin-top: 1rem;
     padding-bottom: 40px;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .footer-left-bar {
@@ -19,7 +19,7 @@
    gap: 0.5rem;
    list-style: none;
    flex-wrap: wrap;
-   width: 60%;
+   width: 70%;
    justify-content: space-between;
    > li  {
     > a {

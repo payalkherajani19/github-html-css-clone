@@ -5,13 +5,14 @@
 
 .layout {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr auto;
     padding-left: 32px;
     padding-right: 32px;
     max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 8px;
+    grid-gap: 16px;
 }
 
 .layout-sidebar {
@@ -50,22 +51,11 @@
     margin-bottom: 16px;
 }
 
-.btn {
-    padding: 5px 16px;
-    font-size: 14px;
-    line-height: 20px;
-    border: 1px solid;
-    border-radius: 6px;
-    cursor: pointer;
-    color: #24292F;
-    background-color: #F6F8FA;
-    display: block;
-    width: 100%;
-    border-color: var(--color-btn-border);
-}
+
 
 .user-profile-bio {
     margin-bottom: 16px;
+    font-size: 16px;
 }
 
 .followers-following {
@@ -98,6 +88,8 @@
 
 .layout-main-form-actions {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 0.5rem;
 }
 
@@ -110,10 +102,11 @@
 .options {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .search-repositories {
-    flex-basis: 60%;
+     flex: 1 auto;
 }
 
 .form-control {
@@ -188,3 +181,42 @@
     margin-bottom: 16px;
     text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+    .layout{
+         grid-template-columns: 1fr;
+         padding-left: 0px;
+         padding-right: 0px;
+    }
+
+    .layout-sidebar{
+        max-width: 100%;
+    }
+
+    .user-avatar-card{
+        display: flex;
+        margin-bottom: 24px;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .user-avatar{
+        height: 150px;
+        width: 150px;
+    }
+
+    .personal-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .follow-sponsor-div{
+        order: 2;
+    }
+    .followers-following{
+        order: 1;
+    }
+
+    .vcard-details{
+        margin-bottom: 16px;
+    }
+ }
