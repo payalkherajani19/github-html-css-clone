@@ -27,3 +27,26 @@
     }
    }
 }
+
+@media only screen and (max-width: 768px) {
+    .footer-links{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer{
+        justify-content: center;
+    }
+
+    .github-app-header-item-end{
+        display: none;
+    }
+    .Tabs{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: auto;
+    }
+    .Tab>a{
+        padding: 3px;
+    }
+    
+ }

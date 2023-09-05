@@ -219,4 +219,9 @@
     .vcard-details{
         margin-bottom: 16px;
     }
+
+    .octicon-star, .octicon-repo-forked, .octicon-package, .octicon-table, .octicon-repo, .octicon-book {
+        display: contents;
+       
+    }
  }
