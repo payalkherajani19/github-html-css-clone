@@ -55,10 +55,6 @@ ul{
     list-style: none;
 }
 
-.text-decoration-none{
-  text-decoration: none;
-}
-
 .link-primary{
     color: var(--color-fg-default);
 }
