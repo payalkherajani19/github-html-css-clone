@@ -12,931 +12,892 @@
 </head>
 
 <body>
-    <div>
+<div id="root">
+        <header class="github-app-header">
+            <div class="github-app-header-items">
 
-        <div class="app-header">
-            <header class="github-app-header">
-                <div class="github-app-header-items">
-
-                    <div class="github-app-header-item-start">
-                        <div class="border" style="padding: 0.5rem"><i class="fa-solid fa-bars fa-lg"
-                                style="color: #a2acbe;"></i></div>
-                        <div style="margin-left: 0.5rem;"><i class="fa-brands fa-github fa-2x"></i> </div>
-                        <span><b>scarly</b></span>
-                    </div>
-
-                    <div class="github-app-header-item-end">
-                        <div style="position: relative;">
-                            <label class="search-icon" for="search-input" aria-label="search">
-                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-search">
-                                    <path
-                                        d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z">
-                                    </path>
-                                </svg>
-                            </label>
-
-                            <input type="text" placeholder="Type / to search" class="search-input" id="search-input" />
-
-                            <button class="command-palette-btn" title="command-palette">
-                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-command-palette">
-                                    <path
-                                        d="m6.354 8.04-4.773 4.773a.75.75 0 1 0 1.061 1.06L7.945 8.57a.75.75 0 0 0 0-1.06L2.642 2.206a.75.75 0 0 0-1.06 1.061L6.353 8.04ZM8.75 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5Z">
-                                    </path>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="github-header-actions">
-                            <button class="btn" style="padding: 5px; display: flex;" title="add">
-                                <span>
-                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                        data-view-component="true" class="octicon octicon-plus">
-                                        <path
-                                            d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                        data-view-component="true" class="octicon octicon-triangle-down">
-                                        <path
-                                            d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </button>
-
-                            <button class="btn" style="padding: 5px;" title="issue open btn">
-                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-issue-opened Button-visual">
-                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                                    <path
-                                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z">
-                                    </path>
-                                </svg>
-                            </button>
-
-                            <button class="btn" title="git pull request">
-                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-git-pull-request Button-visual">
-                                    <path
-                                        d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z">
-                                    </path>
-                                </svg>
-                            </button>
-
-                            <button class="btn" title="inbox">
-                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-inbox color-fg-muted mr-0">
-                                    <path
-                                        d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z">
-                                    </path>
-                                </svg>
-                            </button>
-
-                        </div>
-
-
-                        <div class="github-header-user">
-                            <img class="circle" src="https://avatars.githubusercontent.com/u/115525034?v=4" size="32"
-                                width="32" height="32" alt="github-header-user" />
-                        </div>
-
-                    </div>
+                <div class="github-app-header-item-start">
+                    <div class="border" style="padding: 0.5rem"><i class="fa-solid fa-bars fa-lg"
+                            style="color: #a2acbe;"></i></div>
+                    <div style="margin-left: 0.5rem;"><i class="fa-brands fa-github fa-2x"></i> </div>
+                    <span><b>scarly</b></span>
                 </div>
 
-                <nav class="github-local-navbar">
-                    <ul class="Tabs">
-                        <li class="list-item  Tab">
-                            <a href="#">
+                <div class="github-app-header-item-end">
+                    <div style="position: relative;">
+                        <label class="search-icon" for="search-input" aria-label="search">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-search">
+                                <path
+                                    d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z">
+                                </path>
+                            </svg>
+                        </label>
+
+                        <input type="text" placeholder="Type / to search" class="search-input" id="search-input" />
+
+                        <button class="command-palette-btn" title="command-palette">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-command-palette">
+                                <path
+                                    d="m6.354 8.04-4.773 4.773a.75.75 0 1 0 1.061 1.06L7.945 8.57a.75.75 0 0 0 0-1.06L2.642 2.206a.75.75 0 0 0-1.06 1.061L6.353 8.04ZM8.75 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="github-header-actions">
+                        <button class="btn" style="padding: 5px; display: flex;" title="add">
+                            <span>
                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-book">
+                                    data-view-component="true" class="octicon octicon-plus">
                                     <path
-                                        d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z">
+                                        d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z">
                                     </path>
                                 </svg>
-                                Overview
-                            </a>
-                        </li>
-                        <li class="list-item active Tab">
-                            <a href="#">
+                            </span>
+                            <span>
                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-repo">
+                                    data-view-component="true" class="octicon octicon-triangle-down">
                                     <path
-                                        d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                                        d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
                                     </path>
                                 </svg>
-                                <b>Repositories</b>
-                            </a>
-                        </li>
-                        <li class="list-item Tab">
-                            <a href="#">
-                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-table">
+                            </span>
+                        </button>
+
+                        <button class="btn" style="padding: 5px;" title="issue open btn">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-issue-opened Button-visual">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                                <path
+                                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <button class="btn" title="git pull request">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-git-pull-request Button-visual">
+                                <path
+                                    d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <button class="btn" title="inbox">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-inbox color-fg-muted mr-0">
+                                <path
+                                    d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z">
+                                </path>
+                            </svg>
+                        </button>
+
+                    </div>
+
+
+                    <div class="github-header-user">
+                        <img class="circle" src="https://avatars.githubusercontent.com/u/115525034?v=4" size="32"
+                            width="32" height="32" alt="github-header-user" />
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="github-local-navbar">
+                <ul class="Tabs">
+                    <li class="list-item  Tab">
+                        <a href="#">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-book">
+                                <path
+                                    d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z">
+                                </path>
+                            </svg>
+                            Overview
+                        </a>
+                    </li>
+                    <li class="list-item active Tab">
+                        <a href="#">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-repo">
+                                <path
+                                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                                </path>
+                            </svg>
+                            <b>Repositories</b>
+                        </a>
+                    </li>
+                    <li class="list-item Tab">
+                        <a href="#">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-table">
+                                <path
+                                    d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z">
+                                </path>
+                            </svg>
+                            Projects
+                        </a>
+                    </li>
+                    <li class="list-item Tab">
+                        <a href="#">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-package">
+                                <path
+                                    d="m8.878.392 5.25 3.045c.54.314.872.89.872 1.514v6.098a1.75 1.75 0 0 1-.872 1.514l-5.25 3.045a1.75 1.75 0 0 1-1.756 0l-5.25-3.045A1.75 1.75 0 0 1 1 11.049V4.951c0-.624.332-1.201.872-1.514L7.122.392a1.75 1.75 0 0 1 1.756 0ZM7.875 1.69l-4.63 2.685L8 7.133l4.755-2.758-4.63-2.685a.248.248 0 0 0-.25 0ZM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432Zm6.25 8.271 4.625-2.683a.25.25 0 0 0 .125-.216V5.677L8.75 8.432Z">
+                                </path>
+                            </svg>
+                            Packages
+                        </a>
+                    </li>
+                    <li class="list-item Tab">
+                        <a href="#">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                data-view-component="true" class="octicon octicon-star">
+                                <path
+                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                </path>
+                            </svg>
+                            Stars
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="layout">
+                <!-- GITHUB LAYOUT SIDEBAR -->
+                <aside class="layout-sidebar">
+                    <div class="user-avatar-card">
+                        <img src="https://avatars.githubusercontent.com/u/2543381?v=4" alt="user-avatar"
+                            class="user-avatar" width="260" height="260" />
+
+                        <div class="username-card">
+                            <h1 class="full-name">Aurelie Vache</h1>
+                            <div class="additional-information-username">
+                                scraly · she/her
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="follow-sponsor-div">
+                            <button class="btn">Follow</button>
+                            <button class="btn">Sponsor</button>
+                        </div>
+                        <div class="user-profile-bio">
+                            DevRel - <a class="user-mention notranslate text-bold"
+                                href="https://github.com/GoogleDeveloperExperts">@GoogleDeveloperExperts</a>
+                            - Docker captain - CNCF Ambassador - Gitpod Hero - CKAD - Speaker - Sketchnoter -
+                            Technical writer - Conferences organizer
+                        </div>
+
+                        <div class="followers-following">
+                            <a href="#" class="link-secondary">
+                                <svg text="muted" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                                    width="16" data-view-component="true" class="icon">
                                     <path
-                                        d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z">
+                                        d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z">
                                     </path>
                                 </svg>
-                                Projects
+                                <span class="text-bold">596</span>
+                                followers
                             </a>
-                        </li>
-                        <li class="list-item Tab">
-                            <a href="#">
-                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-package">
+
+                            <span>·</span>
+                            <a href="#" class="link-secondary"><span class="text-bold">37</span> following</a>
+                        </div>
+
+                        <ul class="vcard-details">
+                            <li class="pt-1">
+                                <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16"
+                                    height="16" aria-hidden="true">
                                     <path
-                                        d="m8.878.392 5.25 3.045c.54.314.872.89.872 1.514v6.098a1.75 1.75 0 0 1-.872 1.514l-5.25 3.045a1.75 1.75 0 0 1-1.756 0l-5.25-3.045A1.75 1.75 0 0 1 1 11.049V4.951c0-.624.332-1.201.872-1.514L7.122.392a1.75 1.75 0 0 1 1.756 0ZM7.875 1.69l-4.63 2.685L8 7.133l4.755-2.758-4.63-2.685a.248.248 0 0 0-.25 0ZM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432Zm6.25 8.271 4.625-2.683a.25.25 0 0 0 .125-.216V5.677L8.75 8.432Z">
+                                        d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z">
                                     </path>
                                 </svg>
-                                Packages
-                            </a>
-                        </li>
-                        <li class="list-item Tab">
-                            <a href="#">
-                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                    data-view-component="true" class="octicon octicon-star">
+                                <span title="ovh">
+                                    ovh
+                                </span>
+                            </li>
+                            <li class="pt-1">
+                                <svg class="octicon octicon-location" viewBox="0 0 16 16" version="1.1" width="16"
+                                    height="16" aria-hidden="true">
                                     <path
-                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                        d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z">
                                     </path>
                                 </svg>
-                                Stars
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+                                <span>Toulouse</span>
+                            </li>
+                            <li class="pt-1">
+                                <svg class="octicon octicon-mail" viewBox="0 0 16 16" version="1.1" width="16"
+                                    height="16" aria-hidden="true">
+                                    <path
+                                        d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z">
+                                    </path>
+                                </svg>
+                                <a class="link-primary" href="mailto:scraly@gmail.com">scraly@gmail.com</a>
+                            </li>
+                            <li class="pt-1">
+                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                    data-view-component="true" class="octicon octicon-link">
+                                    <path
+                                        d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                                    </path>
+                                </svg>
+                                <a class="link-primary" href="http://www.scraly.com/">http://www.scraly.com/</a>
+                            </li>
+                            <li class="pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.5 222.3" role="img"
+                                    aria-labelledby="amuddgi9p2q3m7gltg48g85ah8tnulqa" class="octicon" width="16"
+                                    height="16">
+                                    <title id="amuddgi9p2q3m7gltg48g85ah8tnulqa">Twitter</title>
+                                    <path
+                                        d="M273.5 26.3a109.77 109.77 0 0 1-32.2 8.8 56.07 56.07 0 0 0 24.7-31 113.39 113.39 0 0 1-35.7 13.6 56.1 56.1 0 0 0-97 38.4 54 54 0 0 0 1.5 12.8A159.68 159.68 0 0 1 19.1 10.3a56.12 56.12 0 0 0 17.4 74.9 56.06 56.06 0 0 1-25.4-7v.7a56.11 56.11 0 0 0 45 55 55.65 55.65 0 0 1-14.8 2 62.39 62.39 0 0 1-10.6-1 56.24 56.24 0 0 0 52.4 39 112.87 112.87 0 0 1-69.7 24 119 119 0 0 1-13.4-.8 158.83 158.83 0 0 0 86 25.2c103.2 0 159.6-85.5 159.6-159.6 0-2.4-.1-4.9-.2-7.3a114.25 114.25 0 0 0 28.1-29.1"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <a class="link-primary" href="https://twitter.com/aurelievache">@aurelievache</a>
+                            </li>
+                            <li class="pt-1">
+                                <svg title="Social account" aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                    version="1.1" width="16" data-view-component="true" class="octicon octicon-link">
+                                    <path
+                                        d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                                    </path>
+                                </svg>
+                                <a class="link-primary"
+                                    href="https://dev.to/aurelievache">https://dev.to/aurelievache</a>
+                            </li>
+                            <li class="pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" role="img" aria-labelledby="aktw4qzo0bju9noamz3mrudfvtis70u"
+                                    class="octicon">
+                                    <title id="aktw4qzo0bju9noamz3mrudfvtis70u">LinkedIn</title>
+                                    <g clip-path="url(#clip0_202_91845)">
+                                        <path
+                                            d="M14.5455 0H1.45455C0.650909 0 0 0.650909 0 1.45455V14.5455C0 15.3491 0.650909 16 1.45455 16H14.5455C15.3491 16 16 15.3491 16 14.5455V1.45455C16 0.650909 15.3491 0 14.5455 0ZM5.05746 13.0909H2.912V6.18764H5.05746V13.0909ZM3.96291 5.20073C3.27127 5.20073 2.712 4.64 2.712 3.94982C2.712 3.25964 3.272 2.69964 3.96291 2.69964C4.65236 2.69964 5.21309 3.26036 5.21309 3.94982C5.21309 4.64 4.65236 5.20073 3.96291 5.20073ZM13.0938 13.0909H10.9498V9.73382C10.9498 8.93309 10.9353 7.90327 9.83491 7.90327C8.71855 7.90327 8.54691 8.77527 8.54691 9.67564V13.0909H6.40291V6.18764H8.46109V7.13091H8.49018C8.77673 6.58836 9.47636 6.016 10.52 6.016C12.6924 6.016 13.0938 7.44582 13.0938 9.30473V13.0909V13.0909Z"
+                                            fill="currentColor"></path>
+                                    </g>
+                                </svg>
+                                <a class="link-primary"
+                                    href="https://www.linkedin.com/in/aurelievache">in/aurelievache</a>
+                            </li>
+                            <li class="pt-1">
+                                <svg title="Social account" aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                    version="1.1" width="16" data-view-component="true" class="octicon octicon-link">
+                                    <path
+                                        d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                                    </path>
+                                </svg>
+                                <a class="link-primary"
+                                    href="https://noti.st/aurelievache">https://noti.st/aurelievache</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="acheivements">
+                        <h2>Acheivements</h2>
+                        <a href="/scraly?achievement=pair-extraordinaire&amp;tab=achievements">
+                            <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png"
+                                width="64" alt="Achievement: Pair Extraordinaire">
+                        </a>
+                        <a href="https://github.com/scraly?achievement=quickdraw&tab=achievements">
+                            <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png"
+                                width="64" alt="Achievement: QuickDraw">
+                        </a>
+                        <a href="https://github.com/scraly?achievement=starstruck&tab=achievements">
+                            <img src="https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png"
+                                width="64" alt="Achievement: StarStruck">
+                        </a>
+                        <a href="https://github.com/scraly?achievement=yolo&tab=achievements">
+                            <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png"
+                                width="64" alt="Achievement: Yolo Default">
+                        </a>
+                        <a href="https://github.com/scraly?achievement=pull-shark&tab=achievements">
+                            <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png"
+                                width="64" alt="Achievement: Pull Shark">
+                        </a>
+                        <a href="/scraly?achievement=arctic-code-vault-contributor&amp;tab=achievements"><img
+                                src="https://github.githubassets.com/images/modules/profile/achievements/arctic-code-vault-contributor-default.png"
+                                width="64" alt="Achievement: Arctic Code Vault Contributor"></a>
+                    </div>
+
+                </aside>
+
+                <!-- GITHUB LAYOUT REPOSITIERS -->
+                <main class="layout-main">
+                    <div class="main-actions">
+                        <form class="layout-main-form-actions">
+                            <div class="search-repositories">
+                                <input placeholder="Find a repository…" class="form-control" type="search"
+                                    aria-label="search-repositories" />
+                            </div>
+                            <div class="options">
+                                <details class="type">
+                                    <summary class="btn">
+                                        <span>Type</span>
+                                        <span style="vertical-align: text-top;">
+                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                                                width="16" data-view-component="true"
+                                                class="octicon octicon-triangle-down">
+                                                <path
+                                                    d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                </details>
+                                <details class="language">
+                                    <summary class="btn">
+                                        <span>Language</span>
+                                        <span style="vertical-align: text-top;">
+                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                                                width="16" class="octicon octicon-triangle-down">
+                                                <path
+                                                    d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                </details>
+                                <details class="sort">
+                                    <summary class="btn">
+                                        <span>Sort</span>
+                                        <span style="vertical-align: text-top;">
+                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                                                width="16" class="octicon octicon-triangle-down">
+                                                <path
+                                                    d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                </details>
+                            </div>
+                        </form>
+                    </div>
+                    <section class="user-repositories-list">
+                        <ul>
+                            <li class="single-repositories-listitem">
+                                <div class="repo-details">
+                                    <h3 style="margin-bottom: 4px;">
+                                        <a href="/scraly/developers-conferences-agenda">
+                                            developers-conferences-agenda</a>
+                                        <span class="label">Public</span>
+                                    </h3>
+                                    <div>
+                                        <p class="repo-description">This repository list a maximum of tech
+                                            conferences's date and CFP in order to
+                                            help conferences organizers, speakers & attendees
+                                        </p>
+                                    </div>
+
+                                    <div class="color-fg-muted mt-2">
+
+                                        <span class="mr-3">
+                                            <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                            <span>JavaScript</span>
+                                        </span>
+
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/stargazers">
+                                            <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-star">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                </path>
+                                            </svg>
+                                            1,192
+                                        </a>
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/forks">
+                                            <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-repo-forked">
+                                                <path
+                                                    d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                                                </path>
+                                            </svg>
+                                            287
+                                        </a>
+                                        Updated Sep 1, 2023
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <button class="btn">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            class="octicon octicon-star">
+                                            <path
+                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                            </path>
+                                        </svg>
+                                        <span>
+                                            Star
+                                        </span>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="single-repositories-listitem">
+                                <div class="repo-details">
+                                    <h3 style="margin-bottom: 4px;">
+                                        <a href="/scraly/developers-conferences-agenda">
+                                            developers-conferences-agenda</a>
+                                        <span class="label">Public</span>
+                                    </h3>
+                                    <div>
+                                        <p class="repo-description">This repository list a maximum of tech
+                                            conferences's date and CFP in order to
+                                            help conferences organizers, speakers & attendees
+                                        </p>
+                                    </div>
+
+                                    <div class="color-fg-muted mt-2">
+
+                                        <span class="mr-3">
+                                            <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                            <span>JavaScript</span>
+                                        </span>
+
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/stargazers">
+                                            <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-star">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                </path>
+                                            </svg>
+                                            1,192
+                                        </a>
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/forks">
+                                            <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-repo-forked">
+                                                <path
+                                                    d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                                                </path>
+                                            </svg>
+                                            287
+                                        </a>
+                                        Updated Sep 1, 2023
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <button class="btn btn-sm">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            class="octicon octicon-star">
+                                            <path
+                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                            </path>
+                                        </svg>
+                                        <span>
+                                            Star
+                                        </span>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="single-repositories-listitem">
+                                <div class="repo-details">
+                                    <h3 style="margin-bottom: 4px;">
+                                        <a href="/scraly/developers-conferences-agenda">
+                                            developers-conferences-agenda</a>
+                                        <span class="label">Public</span>
+                                    </h3>
+                                    <div>
+                                        <p class="repo-description">This repository list a maximum of tech
+                                            conferences's date and CFP in order to
+                                            help conferences organizers, speakers & attendees
+                                        </p>
+                                    </div>
+
+                                    <div class="color-fg-muted mt-2">
+
+                                        <span class="mr-3">
+                                            <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                            <span>JavaScript</span>
+                                        </span>
+
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/stargazers">
+                                            <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-star">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                </path>
+                                            </svg>
+                                            1,192
+                                        </a>
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/forks">
+                                            <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-repo-forked">
+                                                <path
+                                                    d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                                                </path>
+                                            </svg>
+                                            287
+                                        </a>
+                                        Updated Sep 1, 2023
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <button class="btn">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            class="octicon octicon-star">
+                                            <path
+                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                            </path>
+                                        </svg>
+                                        <span>
+                                            Star
+                                        </span>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="single-repositories-listitem">
+                                <div class="repo-details">
+                                    <h3 style="margin-bottom: 4px;">
+                                        <a href="/scraly/developers-conferences-agenda">
+                                            developers-conferences-agenda</a>
+                                        <span class="label">Public</span>
+                                    </h3>
+                                    <div>
+                                        <p class="repo-description">This repository list a maximum of tech
+                                            conferences's date and CFP in order to
+                                            help conferences organizers, speakers & attendees
+                                        </p>
+                                    </div>
+
+                                    <div class="color-fg-muted mt-2">
+
+                                        <span class="mr-3">
+                                            <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                            <span>JavaScript</span>
+                                        </span>
+
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/stargazers">
+                                            <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-star">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                </path>
+                                            </svg>
+                                            1,192
+                                        </a>
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/forks">
+                                            <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-repo-forked">
+                                                <path
+                                                    d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                                                </path>
+                                            </svg>
+                                            287
+                                        </a>
+                                        Updated Sep 1, 2023
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <button class="btn">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            class="octicon octicon-star">
+                                            <path
+                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                            </path>
+                                        </svg>
+                                        <span>
+                                            Star
+                                        </span>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="single-repositories-listitem">
+                                <div class="repo-details">
+                                    <h3 style="margin-bottom: 4px;">
+                                        <a href="/scraly/developers-conferences-agenda">
+                                            developers-conferences-agenda</a>
+                                        <span class="label">Public</span>
+                                    </h3>
+                                    <div>
+                                        <p class="repo-description">This repository list a maximum of tech
+                                            conferences's date and CFP in order to
+                                            help conferences organizers, speakers & attendees
+                                        </p>
+                                    </div>
+
+                                    <div class="color-fg-muted mt-2">
+
+                                        <span class="mr-3">
+                                            <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                            <span>JavaScript</span>
+                                        </span>
+
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/stargazers">
+                                            <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-star">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                </path>
+                                            </svg>
+                                            1,192
+                                        </a>
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/forks">
+                                            <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" class="octicon octicon-repo-forked">
+                                                <path
+                                                    d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                                                </path>
+                                            </svg>
+                                            287
+                                        </a>
+                                        Updated Sep 1, 2023
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <button class="btn">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-star">
+                                            <path
+                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                            </path>
+                                        </svg>
+                                        <span>
+                                            Star
+                                        </span>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="single-repositories-listitem">
+                                <div class="repo-details">
+                                    <h3 style="margin-bottom: 4px;">
+                                        <a href="/scraly/developers-conferences-agenda">
+                                            developers-conferences-agenda</a>
+                                        <span class="label">Public</span>
+                                    </h3>
+                                    <div>
+                                        <p class="repo-description">This repository list a maximum of tech
+                                            conferences's date and CFP in order to
+                                            help conferences organizers, speakers & attendees
+                                        </p>
+                                    </div>
+
+                                    <div class="color-fg-muted mt-2">
+
+                                        <span class="mr-3">
+                                            <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                            <span>JavaScript</span>
+                                        </span>
+
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/stargazers">
+                                            <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" data-view-component="true"
+                                                class="octicon octicon-star">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                </path>
+                                            </svg>
+                                            1,192
+                                        </a>
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/forks">
+                                            <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" data-view-component="true"
+                                                class="octicon octicon-repo-forked">
+                                                <path
+                                                    d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                                                </path>
+                                            </svg>
+                                            287
+                                        </a>
+                                        Updated Sep 1, 2023
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <button class="btn">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-star">
+                                            <path
+                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                            </path>
+                                        </svg>
+                                        <span>
+                                            Star
+                                        </span>
+                                    </button>
+                                </div>
+                            </li>
+
+
+                            <li class="single-repositories-listitem">
+                                <div class="repo-details">
+                                    <h3 style="margin-bottom: 4px;">
+                                        <a href="/scraly/developers-conferences-agenda">
+                                            developers-conferences-agenda</a>
+                                        <span class="label">Public</span>
+                                    </h3>
+                                    <div>
+                                        <p class="repo-description">This repository list a maximum of tech
+                                            conferences's date and CFP in order to
+                                            help conferences organizers, speakers & attendees
+                                        </p>
+                                    </div>
+
+                                    <div class="color-fg-muted mt-2">
+
+                                        <span class="mr-3">
+                                            <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                            <span>JavaScript</span>
+                                        </span>
+
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/stargazers">
+                                            <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" data-view-component="true"
+                                                class="octicon octicon-star">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                </path>
+                                            </svg>
+                                            1,192
+                                        </a>
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/forks">
+                                            <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" data-view-component="true"
+                                                class="octicon octicon-repo-forked">
+                                                <path
+                                                    d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                                                </path>
+                                            </svg>
+                                            287
+                                        </a>
+                                        Updated Sep 1, 2023
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <button class="btn">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-star">
+                                            <path
+                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                            </path>
+                                        </svg>
+                                        <span>
+                                            Star
+                                        </span>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="single-repositories-listitem">
+                                <div class="repo-details">
+                                    <h3 style="margin-bottom: 4px;">
+                                        <a href="/scraly/developers-conferences-agenda">
+                                            developers-conferences-agenda</a>
+                                        <span class="label">Public</span>
+                                    </h3>
+                                    <div>
+                                        <p class="repo-description">This repository list a maximum of tech
+                                            conferences's date and CFP in order to
+                                            help conferences organizers, speakers & attendees
+                                        </p>
+                                    </div>
+
+                                    <div class="color-fg-muted mt-2">
+
+                                        <span class="mr-3">
+                                            <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                            <span>JavaScript</span>
+                                        </span>
+
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/stargazers">
+                                            <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" data-view-component="true"
+                                                class="octicon octicon-star">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                </path>
+                                            </svg>
+                                            1,192
+                                        </a>
+                                        <a class="color-fg-muted mr-3"
+                                            href="/scraly/developers-conferences-agenda/forks">
+                                            <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
+                                                version="1.1" width="16" data-view-component="true"
+                                                class="octicon octicon-repo-forked">
+                                                <path
+                                                    d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                                                </path>
+                                            </svg>
+                                            287
+                                        </a>
+                                        Updated Sep 1, 2023
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <button class="btn">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-star">
+                                            <path
+                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                            </path>
+                                        </svg>
+                                        <span>
+                                            Star
+                                        </span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <div class="pagination-container">
+                        <div>
+                            <span style="padding: 5px 10px;">&#8826 Previous</span>
+                            <a style="padding: 5px 10px;" href="#">Next &#8827</a>
+                        </div>
+                    </div>
+            </div>
         </div>
 
-        <main>
-            <div class="container">
-                <div class="layout">
-
-                    <!-- GITHUB LAYOUT SIDEBAR -->
-                    <div class="layout-sidebar">
-                        <div class="user-avatar-card">
-                            <img src="https://avatars.githubusercontent.com/u/2543381?v=4" alt="user-avatar"
-                                class="user-avatar" width="260" height="260" />
-
-                            <div class="username-card">
-                                <h1 class="full-name">Aurelie Vache</h1>
-                                <div class="additional-information-username">
-                                    scraly · she/her
-                                </div>
-                            </div>
-                        </div>
-                        <div class="personal-info">
-                            <div class="follow-sponsor-div">
-                                <button class="btn">Follow</button>
-                                <button class="btn">Sponsor</button>
-                            </div>
-                            <div class="user-profile-bio">
-                                DevRel - <a class="user-mention notranslate text-bold"
-                                    href="https://github.com/GoogleDeveloperExperts">@GoogleDeveloperExperts</a>
-                                - Docker captain - CNCF Ambassador - Gitpod Hero - CKAD - Speaker - Sketchnoter -
-                                Technical writer - Conferences organizer
-                            </div>
-
-                            <div class="followers-following">
-                                <a href="#" class="link-secondary">
-                                    <svg text="muted" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                        width="16" data-view-component="true" class="icon">
-                                        <path
-                                            d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z">
-                                        </path>
-                                    </svg>
-                                    <span class="text-bold">596</span>
-                                    followers
-                                </a>
-
-                                <span>·</span>
-                                <a href="#" class="link-secondary"><span class="text-bold">37</span> following</a>
-                            </div>
-
-                            <ul class="vcard-details">
-                                <li class="pt-1">
-                                    <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1"
-                                        width="16" height="16" aria-hidden="true">
-                                        <path
-                                            d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z">
-                                        </path>
-                                    </svg>
-                                    <span title="ovh">
-                                        ovh
-                                    </span>
-                                </li>
-                                <li class="pt-1">
-                                    <svg class="octicon octicon-location" viewBox="0 0 16 16" version="1.1" width="16"
-                                        height="16" aria-hidden="true">
-                                        <path
-                                            d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z">
-                                        </path>
-                                    </svg>
-                                    <span>Toulouse</span>
-                                </li>
-                                <li class="pt-1">
-                                    <svg class="octicon octicon-mail" viewBox="0 0 16 16" version="1.1" width="16"
-                                        height="16" aria-hidden="true">
-                                        <path
-                                            d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z">
-                                        </path>
-                                    </svg>
-                                    <a class="link-primary" href="mailto:scraly@gmail.com">scraly@gmail.com</a>
-                                </li>
-                                <li class="pt-1">
-                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                                        data-view-component="true" class="octicon octicon-link">
-                                        <path
-                                            d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
-                                        </path>
-                                    </svg>
-                                    <a class="link-primary" href="http://www.scraly.com/">http://www.scraly.com/</a>
-                                </li>
-                                <li class="pt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.5 222.3" role="img"
-                                        aria-labelledby="amuddgi9p2q3m7gltg48g85ah8tnulqa" class="octicon" width="16"
-                                        height="16">
-                                        <title id="amuddgi9p2q3m7gltg48g85ah8tnulqa">Twitter</title>
-                                        <path
-                                            d="M273.5 26.3a109.77 109.77 0 0 1-32.2 8.8 56.07 56.07 0 0 0 24.7-31 113.39 113.39 0 0 1-35.7 13.6 56.1 56.1 0 0 0-97 38.4 54 54 0 0 0 1.5 12.8A159.68 159.68 0 0 1 19.1 10.3a56.12 56.12 0 0 0 17.4 74.9 56.06 56.06 0 0 1-25.4-7v.7a56.11 56.11 0 0 0 45 55 55.65 55.65 0 0 1-14.8 2 62.39 62.39 0 0 1-10.6-1 56.24 56.24 0 0 0 52.4 39 112.87 112.87 0 0 1-69.7 24 119 119 0 0 1-13.4-.8 158.83 158.83 0 0 0 86 25.2c103.2 0 159.6-85.5 159.6-159.6 0-2.4-.1-4.9-.2-7.3a114.25 114.25 0 0 0 28.1-29.1"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <a class="link-primary" href="https://twitter.com/aurelievache">@aurelievache</a>
-                                </li>
-                                <li class="pt-1">
-                                    <svg title="Social account" aria-hidden="true" height="16" viewBox="0 0 16 16"
-                                        version="1.1" width="16" data-view-component="true"
-                                        class="octicon octicon-link">
-                                        <path
-                                            d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
-                                        </path>
-                                    </svg>
-                                    <a class="link-primary"
-                                        href="https://dev.to/aurelievache">https://dev.to/aurelievache</a>
-                                </li>
-                                <li class="pt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                        fill="none" role="img" aria-labelledby="aktw4qzo0bju9noamz3mrudfvtis70u"
-                                        class="octicon">
-                                        <title id="aktw4qzo0bju9noamz3mrudfvtis70u">LinkedIn</title>
-                                        <g clip-path="url(#clip0_202_91845)">
-                                            <path
-                                                d="M14.5455 0H1.45455C0.650909 0 0 0.650909 0 1.45455V14.5455C0 15.3491 0.650909 16 1.45455 16H14.5455C15.3491 16 16 15.3491 16 14.5455V1.45455C16 0.650909 15.3491 0 14.5455 0ZM5.05746 13.0909H2.912V6.18764H5.05746V13.0909ZM3.96291 5.20073C3.27127 5.20073 2.712 4.64 2.712 3.94982C2.712 3.25964 3.272 2.69964 3.96291 2.69964C4.65236 2.69964 5.21309 3.26036 5.21309 3.94982C5.21309 4.64 4.65236 5.20073 3.96291 5.20073ZM13.0938 13.0909H10.9498V9.73382C10.9498 8.93309 10.9353 7.90327 9.83491 7.90327C8.71855 7.90327 8.54691 8.77527 8.54691 9.67564V13.0909H6.40291V6.18764H8.46109V7.13091H8.49018C8.77673 6.58836 9.47636 6.016 10.52 6.016C12.6924 6.016 13.0938 7.44582 13.0938 9.30473V13.0909V13.0909Z"
-                                                fill="currentColor"></path>
-                                        </g>
-                                    </svg>
-                                    <a class="link-primary"
-                                        href="https://www.linkedin.com/in/aurelievache">in/aurelievache</a>
-                                </li>
-                                <li class="pt-1">
-                                    <svg title="Social account" aria-hidden="true" height="16" viewBox="0 0 16 16"
-                                        version="1.1" width="16" data-view-component="true"
-                                        class="octicon octicon-link">
-                                        <path
-                                            d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
-                                        </path>
-                                    </svg>
-                                    <a class="link-primary"
-                                        href="https://noti.st/aurelievache">https://noti.st/aurelievache</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="acheivements">
-                            <h2>Acheivements</h2>
-                            <a href="/scraly?achievement=pair-extraordinaire&amp;tab=achievements">
-                                <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png"
-                                    width="64" alt="Achievement: Pair Extraordinaire">
-                            </a>
-                            <a href="https://github.com/scraly?achievement=quickdraw&tab=achievements">
-                                <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png"
-                                    width="64" alt="Achievement: QuickDraw">
-                            </a>
-                            <a href="https://github.com/scraly?achievement=starstruck&tab=achievements">
-                                <img src="https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png"
-                                    width="64" alt="Achievement: StarStruck">
-                            </a>
-                            <a href="https://github.com/scraly?achievement=yolo&tab=achievements">
-                                <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png"
-                                    width="64" alt="Achievement: Yolo Default">
-                            </a>
-                            <a href="https://github.com/scraly?achievement=pull-shark&tab=achievements">
-                                <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png"
-                                    width="64" alt="Achievement: Pull Shark">
-                            </a>
-                            <a href="/scraly?achievement=arctic-code-vault-contributor&amp;tab=achievements"><img
-                                    src="https://github.githubassets.com/images/modules/profile/achievements/arctic-code-vault-contributor-default.png"
-                                    width="64" alt="Achievement: Arctic Code Vault Contributor"></a>
-                        </div>
-
-                    </div>
-
-                    <!-- GITHUB LAYOUT REPOSITIERS -->
-                    <div class="layout-main">
-                        <div class="main-actions">
-                            <form class="layout-main-form-actions">
-                                <div class="search-repositories">
-                                    <input placeholder="Find a repository…" class="form-control" type="search"
-                                        aria-label="search-repositories" />
-                                </div>
-                                <div class="options">
-                                    <details class="type">
-                                        <summary class="btn">
-                                            <span>Type</span>
-                                            <span style="vertical-align: text-top;">
-                                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                    width="16" data-view-component="true"
-                                                    class="octicon octicon-triangle-down">
-                                                    <path
-                                                        d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                        </summary>
-                                    </details>
-                                    <details class="language">
-                                        <summary class="btn">
-                                            <span>Language</span>
-                                            <span style="vertical-align: text-top;">
-                                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                    width="16"
-                                                    class="octicon octicon-triangle-down">
-                                                    <path
-                                                        d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                        </summary>
-                                    </details>
-                                    <details class="sort">
-                                        <summary class="btn">
-                                            <span>Sort</span>
-                                            <span style="vertical-align: text-top;">
-                                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                    width="16"
-                                                    class="octicon octicon-triangle-down">
-                                                    <path
-                                                        d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                        </summary>
-                                    </details>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="user-repositories-list">
-                            <ul>
-                                <li class="single-repositories-listitem">
-                                    <div class="repo-details">
-                                        <h3 style="margin-bottom: 4px;">
-                                            <a href="/scraly/developers-conferences-agenda">
-                                                developers-conferences-agenda</a>
-                                            <span class="label">Public</span>
-                                        </h3>
-                                        <div>
-                                            <p class="repo-description">This repository list a maximum of tech
-                                                conferences's date and CFP in order to
-                                                help conferences organizers, speakers & attendees
-                                            </p>
-                                        </div>
-
-                                        <div class="color-fg-muted mt-2">
-
-                                            <span class="mr-3">
-                                                <span class="repo-language-color"
-                                                    style="background-color: #f1e05a"></span>
-                                                <span>JavaScript</span>
-                                            </span>
-
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/stargazers">
-                                                <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-star">
-                                                    <path
-                                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                    </path>
-                                                </svg>
-                                                1,192
-                                            </a>
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/forks">
-                                                <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-repo-forked">
-                                                    <path
-                                                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
-                                                    </path>
-                                                </svg>
-                                                287
-                                            </a>
-                                            Updated Sep 1, 2023
-                                        </div>
-                                    </div>
-                                    <div class="stars">
-                                        <button class="btn">
-                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                width="16"
-                                                class="octicon octicon-star">
-                                                <path
-                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                </path>
-                                            </svg>
-                                            <span>
-                                                Star
-                                            </span>
-                                        </button>
-                                    </div>
-                                </li>
-
-                                <li class="single-repositories-listitem">
-                                    <div class="repo-details">
-                                        <h3 style="margin-bottom: 4px;">
-                                            <a href="/scraly/developers-conferences-agenda">
-                                                developers-conferences-agenda</a>
-                                            <span class="label">Public</span>
-                                        </h3>
-                                        <div>
-                                            <p class="repo-description">This repository list a maximum of tech
-                                                conferences's date and CFP in order to
-                                                help conferences organizers, speakers & attendees
-                                            </p>
-                                        </div>
-
-                                        <div class="color-fg-muted mt-2">
-
-                                            <span class="mr-3">
-                                                <span class="repo-language-color"
-                                                    style="background-color: #f1e05a"></span>
-                                                <span>JavaScript</span>
-                                            </span>
-
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/stargazers">
-                                                <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-star">
-                                                    <path
-                                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                    </path>
-                                                </svg>
-                                                1,192
-                                            </a>
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/forks">
-                                                <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-repo-forked">
-                                                    <path
-                                                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
-                                                    </path>
-                                                </svg>
-                                                287
-                                            </a>
-                                            Updated Sep 1, 2023
-                                        </div>
-                                    </div>
-                                    <div class="stars">
-                                        <button class="btn btn-sm">
-                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                width="16"
-                                                class="octicon octicon-star">
-                                                <path
-                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                </path>
-                                            </svg>
-                                            <span>
-                                                Star
-                                            </span>
-                                        </button>
-                                    </div>
-                                </li>
-
-                                <li class="single-repositories-listitem">
-                                    <div class="repo-details">
-                                        <h3 style="margin-bottom: 4px;">
-                                            <a href="/scraly/developers-conferences-agenda">
-                                                developers-conferences-agenda</a>
-                                            <span class="label">Public</span>
-                                        </h3>
-                                        <div>
-                                            <p class="repo-description">This repository list a maximum of tech
-                                                conferences's date and CFP in order to
-                                                help conferences organizers, speakers & attendees
-                                            </p>
-                                        </div>
-
-                                        <div class="color-fg-muted mt-2">
-
-                                            <span class="mr-3">
-                                                <span class="repo-language-color"
-                                                    style="background-color: #f1e05a"></span>
-                                                <span>JavaScript</span>
-                                            </span>
-
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/stargazers">
-                                                <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-star">
-                                                    <path
-                                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                    </path>
-                                                </svg>
-                                                1,192
-                                            </a>
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/forks">
-                                                <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-repo-forked">
-                                                    <path
-                                                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
-                                                    </path>
-                                                </svg>
-                                                287
-                                            </a>
-                                            Updated Sep 1, 2023
-                                        </div>
-                                    </div>
-                                    <div class="stars">
-                                        <button class="btn">
-                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                width="16"
-                                                class="octicon octicon-star">
-                                                <path
-                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                </path>
-                                            </svg>
-                                            <span>
-                                                Star
-                                            </span>
-                                        </button>
-                                    </div>
-                                </li>
-
-                                <li class="single-repositories-listitem">
-                                    <div class="repo-details">
-                                        <h3 style="margin-bottom: 4px;">
-                                            <a href="/scraly/developers-conferences-agenda">
-                                                developers-conferences-agenda</a>
-                                            <span class="label">Public</span>
-                                        </h3>
-                                        <div>
-                                            <p class="repo-description">This repository list a maximum of tech
-                                                conferences's date and CFP in order to
-                                                help conferences organizers, speakers & attendees
-                                            </p>
-                                        </div>
-
-                                        <div class="color-fg-muted mt-2">
-
-                                            <span class="mr-3">
-                                                <span class="repo-language-color"
-                                                    style="background-color: #f1e05a"></span>
-                                                <span>JavaScript</span>
-                                            </span>
-
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/stargazers">
-                                                <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-star">
-                                                    <path
-                                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                    </path>
-                                                </svg>
-                                                1,192
-                                            </a>
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/forks">
-                                                <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-repo-forked">
-                                                    <path
-                                                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
-                                                    </path>
-                                                </svg>
-                                                287
-                                            </a>
-                                            Updated Sep 1, 2023
-                                        </div>
-                                    </div>
-                                    <div class="stars">
-                                        <button class="btn">
-                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                width="16"
-                                                class="octicon octicon-star">
-                                                <path
-                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                </path>
-                                            </svg>
-                                            <span>
-                                                Star
-                                            </span>
-                                        </button>
-                                    </div>
-                                </li>
-
-                                <li class="single-repositories-listitem">
-                                    <div class="repo-details">
-                                        <h3 style="margin-bottom: 4px;">
-                                            <a href="/scraly/developers-conferences-agenda">
-                                                developers-conferences-agenda</a>
-                                            <span class="label">Public</span>
-                                        </h3>
-                                        <div>
-                                            <p class="repo-description">This repository list a maximum of tech
-                                                conferences's date and CFP in order to
-                                                help conferences organizers, speakers & attendees
-                                            </p>
-                                        </div>
-
-                                        <div class="color-fg-muted mt-2">
-
-                                            <span class="mr-3">
-                                                <span class="repo-language-color"
-                                                    style="background-color: #f1e05a"></span>
-                                                <span>JavaScript</span>
-                                            </span>
-
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/stargazers">
-                                                <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-star">
-                                                    <path
-                                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                    </path>
-                                                </svg>
-                                                1,192
-                                            </a>
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/forks">
-                                                <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16"
-                                                    class="octicon octicon-repo-forked">
-                                                    <path
-                                                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
-                                                    </path>
-                                                </svg>
-                                                287
-                                            </a>
-                                            Updated Sep 1, 2023
-                                        </div>
-                                    </div>
-                                    <div class="stars">
-                                        <button class="btn">
-                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                width="16" data-view-component="true"
-                                                class="octicon octicon-star">
-                                                <path
-                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                </path>
-                                            </svg>
-                                            <span>
-                                                Star
-                                            </span>
-                                        </button>
-                                    </div>
-                                </li>
-
-                                <li class="single-repositories-listitem">
-                                    <div class="repo-details">
-                                        <h3 style="margin-bottom: 4px;">
-                                            <a href="/scraly/developers-conferences-agenda">
-                                                developers-conferences-agenda</a>
-                                            <span class="label">Public</span>
-                                        </h3>
-                                        <div>
-                                            <p class="repo-description">This repository list a maximum of tech
-                                                conferences's date and CFP in order to
-                                                help conferences organizers, speakers & attendees
-                                            </p>
-                                        </div>
-
-                                        <div class="color-fg-muted mt-2">
-
-                                            <span class="mr-3">
-                                                <span class="repo-language-color"
-                                                    style="background-color: #f1e05a"></span>
-                                                <span>JavaScript</span>
-                                            </span>
-
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/stargazers">
-                                                <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16" data-view-component="true"
-                                                    class="octicon octicon-star">
-                                                    <path
-                                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                    </path>
-                                                </svg>
-                                                1,192
-                                            </a>
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/forks">
-                                                <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16" data-view-component="true"
-                                                    class="octicon octicon-repo-forked">
-                                                    <path
-                                                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
-                                                    </path>
-                                                </svg>
-                                                287
-                                            </a>
-                                            Updated Sep 1, 2023
-                                        </div>
-                                    </div>
-                                    <div class="stars">
-                                        <button class="btn">
-                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                width="16" data-view-component="true"
-                                                class="octicon octicon-star">
-                                                <path
-                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                </path>
-                                            </svg>
-                                            <span>
-                                                Star
-                                            </span>
-                                        </button>
-                                    </div>
-                                </li>
-
-
-                                <li class="single-repositories-listitem">
-                                    <div class="repo-details">
-                                        <h3 style="margin-bottom: 4px;">
-                                            <a href="/scraly/developers-conferences-agenda">
-                                                developers-conferences-agenda</a>
-                                            <span class="label">Public</span>
-                                        </h3>
-                                        <div>
-                                            <p class="repo-description">This repository list a maximum of tech
-                                                conferences's date and CFP in order to
-                                                help conferences organizers, speakers & attendees
-                                            </p>
-                                        </div>
-
-                                        <div class="color-fg-muted mt-2">
-
-                                            <span class="mr-3">
-                                                <span class="repo-language-color"
-                                                    style="background-color: #f1e05a"></span>
-                                                <span>JavaScript</span>
-                                            </span>
-
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/stargazers">
-                                                <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16" data-view-component="true"
-                                                    class="octicon octicon-star">
-                                                    <path
-                                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                    </path>
-                                                </svg>
-                                                1,192
-                                            </a>
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/forks">
-                                                <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16" data-view-component="true"
-                                                    class="octicon octicon-repo-forked">
-                                                    <path
-                                                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
-                                                    </path>
-                                                </svg>
-                                                287
-                                            </a>
-                                            Updated Sep 1, 2023
-                                        </div>
-                                    </div>
-                                    <div class="stars">
-                                        <button class="btn">
-                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                width="16" data-view-component="true"
-                                                class="octicon octicon-star">
-                                                <path
-                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                </path>
-                                            </svg>
-                                            <span>
-                                                Star
-                                            </span>
-                                        </button>
-                                    </div>
-                                </li>
-
-                                <li class="single-repositories-listitem">
-                                    <div class="repo-details">
-                                        <h3 style="margin-bottom: 4px;">
-                                            <a href="/scraly/developers-conferences-agenda">
-                                                developers-conferences-agenda</a>
-                                            <span class="label">Public</span>
-                                        </h3>
-                                        <div>
-                                            <p class="repo-description">This repository list a maximum of tech
-                                                conferences's date and CFP in order to
-                                                help conferences organizers, speakers & attendees
-                                            </p>
-                                        </div>
-
-                                        <div class="color-fg-muted mt-2">
-
-                                            <span class="mr-3">
-                                                <span class="repo-language-color"
-                                                    style="background-color: #f1e05a"></span>
-                                                <span>JavaScript</span>
-                                            </span>
-
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/stargazers">
-                                                <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16" data-view-component="true"
-                                                    class="octicon octicon-star">
-                                                    <path
-                                                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                    </path>
-                                                </svg>
-                                                1,192
-                                            </a>
-                                            <a class="color-fg-muted mr-3"
-                                                href="/scraly/developers-conferences-agenda/forks">
-                                                <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16"
-                                                    version="1.1" width="16" data-view-component="true"
-                                                    class="octicon octicon-repo-forked">
-                                                    <path
-                                                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
-                                                    </path>
-                                                </svg>
-                                                287
-                                            </a>
-                                            Updated Sep 1, 2023
-                                        </div>
-                                    </div>
-                                    <div class="stars">
-                                        <button class="btn">
-                                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                width="16" data-view-component="true"
-                                                class="octicon octicon-star">
-                                                <path
-                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                                                </path>
-                                            </svg>
-                                            <span>
-                                                Star
-                                            </span>
-                                        </button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="pagination-container">
-                            <div>
-                                <span style="padding: 5px 10px;">&#8826 Previous</span>
-                                <a style="padding: 5px 10px;" href="#">Next &#8827</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer style="width: inherit; margin-left: auto; margin-right: auto;">
-            <div class="footer">
-                <div class="footer-left-bar">
-                    <div style="margin-left: 0.5rem;">
-                        <i class="fa-brands fa-github fa-2x" style="color: #6e7781;"></i>
-                    </div>
-
-                    <span style="margin-left: 0.5rem; color: #6e7781;">
-                        © 2023 GitHub, Inc.
-                    </span>
+    <footer style="width: inherit; margin-left: auto; margin-right: auto;">
+        <div class="footer">
+            <div class="footer-left-bar">
+                <div style="margin-left: 0.5rem;">
+                    <i class="fa-brands fa-github fa-2x" style="color: #6e7781;"></i>
                 </div>
 
-                <ul class="footer-links">
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Status</a></li>
-                    <li><a href="#">Docs</a></li>
-                    <li><a href="#">Contact Github</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">Training</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
+                <span style="margin-left: 0.5rem; color: #6e7781;">
+                    © 2023 GitHub, Inc.
+                </span>
             </div>
 
-        </footer>
+            <ul class="footer-links">
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Contact Github</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
 
-    </div>
-
+    </footer>
+</div>
 </body>
 
 </html>
